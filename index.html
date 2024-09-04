@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Space Grotesk", sans-serif;
+        }
+
+        .nav-container {
+            width: 100%;
+            height: 100px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0rem 3rem;
+        }
+
+        .nav-part2 ul {
+            display: flex;
+            gap: 1.5rem;
+            list-style: none;
+            text-transform: capitalize;
+            margin-top: 1rem;
+            font-size: 1.2rem;
+        }
+
+
+        .btn button {
+            padding: 1.4rem 2rem;
+            text-transform: uppercase;
+            border-radius: 0.5rem;
+            border: 1px solid black;
+            font-weight: 700;
+            background-color: transparent;
+        }
+
+        .part-2 {
+            display: flex;
+            gap: 2rem;
+        }
+
+
+        /* hero section */
+
+        .hero-section {
+            width: 100%;
+            height: 100vh;
+            /* background-color: aquamarine; */
+            display: flex;
+            padding: 5rem;
+
+        }
+
+        .left h1 {
+            font-size: 60px;
+        }
+
+        .left p {
+            margin: 3rem 0rem;
+
+        }
+
+        .left {
+            width: 50%;
+            /* padding-right: 12rem; */
+        }
+
+        .right {
+            width: 50%;
+        }
+
+        .left button {
+            padding: 1.4rem 2rem;
+            text-transform: uppercase;
+            border-radius: 0.5rem;
+            border: none;
+            font-weight: 700;
+            background-color: black;
+            color: white;
+        }
+
+        .branned-icons img {
+            width: 10vw;
+            margin-left: 4.5rem;
+        }
+
+        .service-box {
+            width: 100%;
+            height: auto;
+            margin-top: 10rem;
+            display: flex;
+            padding-left: 5rem;
+        }
+
+        .service-box h1 {
+            background-color: #B9ff66;
+            padding: 0.1rem 0.5rem;
+            font-size: 2rem;
+            border-radius: 5px;
+        }
+
+        .service-box p {
+            margin-left: 4rem;
+        }
+
+        .service-para {
+            width: 60%;
+            height: auto;
+
+        }
+
+        .box-container {
+            width: 100%;
+            height: auto;
+
+            padding: 2rem;
+        }
+
+        .box {
+            width: 550px;
+            height: 300px;
+            background-color: #F3F3F3;
+            border-radius: 2rem;
+            display: flex;
+            align-items: center;
+            padding: 3rem;
+            margin-top: 5rem;
+        }
+
+        .box-left {
+            /* width: 50%; */
+        }
+
+        .learn-more {
+            /* font-size: 1.5rem; */
+            /* margin-top: 1rem; */
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            margin-top: 6rem;
+        }
+
+        .box-left h1 {
+            font-size: 1.8rem;
+            background-color: #B9ff66;
+        }
+
+        .box-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .second-box {
+            background-color: #B9ff66;
+        }
+
+        .second-box h1 {
+            background-color: #F3F3F3;
+        }
+
+        .work h1 {
+            background-color: #B9ff66;
+            padding: 0.1rem 0.5rem;
+            font-size: 2rem;
+            border-radius: 5px;
+            width: auto;
+
+
+        }
+
+        .work {
+            margin-top: 5rem;
+            display: flex;
+            gap: 3rem;
+            padding-left: 4rem;
+        }
+
+        .consultation {
+            width: 100%;
+            height: auto;
+margin-top: 7rem;
+padding: 0rem 3rem;
+        }
+
+        .consol-box {
+            width: 100%;
+            height: 300px;
+            background-color: #B9ff66;
+            padding: 2rem 4rem;
+border-radius: 2rem;
+box-shadow: 0px 5px 0px 0px #191A23;
+
+        }
+
+        .plus-issue {
+            display: flex;
+            justify-content: space-between;
+
+
+        }
+
+        .consol-box h1 {
+            font-size: 2rem;
+            font-weight: 500;
+        }
+.consol-box p{
+    margin: 3rem 0rem;
+}
+        .one {
+            font-size: 3rem;
+        }
+        .others{
+            height: 150px;
+            margin-top: 2rem;
+            background-color: #F3F3F3;
+        }
+        .contact{
+            display: flex;
+            width: 100%;
+            height: auto;
+            align-items: center;
+            gap: 3rem;
+            margin-top: 8rem;
+            padding-left: 5rem;
+        }
+        .contact-h1{
+            background-color: #B9ff66;
+            padding: 0.1rem 0.4rem;
+            font-size: 1.3rem ;
+        }
+        .email-section{
+            width: 85%;
+            height: 100vh;
+            background-color: #F3F3F3;
+            margin-top: 5rem;
+            margin-left: 8rem;
+            border-radius: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            overflow: hidden;
+        }
+        .email-left{
+            width: 556px;
+            height: auto;
+            /* background-color: lightcoral; */
+            padding-left: 5rem;
+            padding-top: 3rem;
+           
+        }
+        form{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+           
+        }
+        .check input{
+           
+        }
+       .full{
+width: 100%;
+padding:0.9rem 1rem;
+border-radius: 0.8rem;
+border: 1px solid black;
+margin-top: 0.4rem;
+       }
+       .name{
+        margin-top: 3rem;
+       }
+       .email{
+        margin-top: 2rem;
+       }
+       .message{
+        margin-top: 2rem;
+       }
+       .message textarea{
+        height: 200px;
+       }
+       form button{
+        padding: 1rem 1rem;
+        background-color: #191A23;
+        color: white;
+        border-radius: 0.8rem;
+        border: none;
+       }
+       .email-right img{
+        margin-left: 15rem;
+       }
+       .email-right{
+        width: 50%;
+       }
+       /* Footer */
+
+.ftr-main{
+    width: 85%;
+            height: 80vh;
+            background-color:#191A23;
+            margin-top: 5rem;
+            margin-left: 8rem;
+            border-radius: 1.1rem 1.1rem 0rem 0rem;
+
+        }
+.ftr-nav{
+width: 100%;
+height: 100px;
+padding: 1rem  2.5rem;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+
+.ftr-nav-menu ul {
+    color: white;
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    font-size: 1.1rem;
+   
+}
+.ftr-nav-menu li{
+    border-bottom: 1px solid white;
+}
+
+.nav-icons img{
+    margin-left: 1rem;
+}
+.ftr-hero-section{
+
+width: 100%;
+height: auto;
+display: flex;
+justify-content: space-around;
+margin-top: 3rem;
+}
+.ftr-hero-left{
+    width: 30%;
+    height: auto;
+    
+}
+.ftr-hero-left h2{
+background-color: #B9ff66;
+width: 130px;
+border-radius: 0.3rem;
+}
+.ftr-hero-left p{
+    color: white;
+    margin-top: 1.4rem;
+}
+.center-p{
+    margin: 1rem 0rem;
+}
+.ftr-hero-right{
+    width: 50%;
+    height: auto;
+    background-color: #292A32;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.ftr-hero-right input{
+    padding: 1rem 2.1rem;
+    background-color: #292A32;
+    border: 1px solid #FFFFFF;
+    color: white;
+    
+border-radius: 0.7rem;
+}
+.ftr-hero-right button{
+    padding: 0.9rem 2.8rem;
+    background-color:#B9ff66;
+    border: 1px solid #FFFFFF;
+    font-weight: 500;
+    font-size: 1rem;
+border-radius: 0.7rem;
+}
+.ftr-main p{
+    color: white;
+}
+.ftr-main a{
+    color: #F3F3F3;
+    margin-left: 2rem;
+}
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="nav-container">
+
+            <img src="Logo.png" width="190vw" height="40vh">
+
+            <div class="part-2">
+
+                <div class="nav-part2">
+
+                    <ul>
+                        <li>About us</li>
+                        <li> Services</li>
+                        <li>use Cases</li>
+                        <li>pricing</li>
+                        <li>blog</li>
+                    </ul>
+                </div>
+                <div class="btn">
+                    <button>request a Quote</button>
+                </div>
+
+            </div>
+    </header>
+
+
+
+    <!-- <div class="hamburger">
+        <input type="checkbox" id="hamburger">
+        <label for="hamburger" class="hamburger">
+            <div class="inner">
+                <div class="line-1 line"></div>
+                <div class="line-2 line"></div>
+                <div class="line-3 line"></div>
+            </div>
+        </label>
+        <ul>
+            <li>Home</li>
+            <li> Courses</li>
+            <li> Services</li>
+            <li> Contact</li>
+        </ul>
+    </div>
+    </div> -->
+    <main>
+        <section>
+            <div class="hero-section">
+
+                <div class="left">
+                    <h1>Navigating the digital landscap for Success</h1>
+                    <p>Our digital marketing agency helps businesses grow and succeed online through a range of services
+                        including SEO, PPC, social media marketing, and content including SEO, PPC, social media
+                        marketing, and content </p>
+
+                    <button>Book a Consultation</button>
+
+                </div>
+                <div class="right">
+
+                    <img src="./hack/Illustration (1).png" width="550vw">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <main>
+        <section>
+
+            <div class="branned-icons">
+
+                <img src="./hack/Vector.png">
+                <img src="./hack/dribble.png">
+                <img src="./hack/Company logo (2).png">
+                <img src="./hack/Company logo (3).png">
+                <img src="./hack/Company logo (4).png">
+                <img src="./hack/Company logo (5).png">
+
+            </div>
+
+
+
+            <div class="service-box">
+
+                <h1>Services</h1>
+                <div class="service-para">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae voluptate expedita, alias
+                        deleniti ullam quam consequuntur vel distinctio reprehenderit
+                    </p>
+                </div>
+            </div>
+
+            <div class="box-container">
+
+                <div class="box">
+                    <div class="box-left">
+                        <h1>Search Engin optomization</h1>
+                        <div class="learn-more">
+                            <img src="./hack/Icon.png">
+                            <h3>Learn more</h3>
+                        </div>
+                    </div>
+                    <div class="box-right">
+                        <img src="./hack/Illustration.png">
+                    </div>
+
+
+                </div>
+
+
+                <div class="box second-box">
+                    <div class="box-left ">
+                        <h1>Pay-per Click advertising</h1>
+                        <div class="learn-more">
+                            <img src="./hack/Icon.png">
+                            <h3>Learn more</h3>
+                        </div>
+                    </div>
+                    <div class="box-right">
+                        <img src="./hack/tokyo-selecting-a-value-in-the-browser-window 1 (1).png" width="250vw">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="work">
+                <h1>Our Working Proccess</h1>
+
+                <p>Step-by-Step Guide to Achieving <br> Your Business Goals</p>
+            </div>
+        </section>
+    </main>
+<main>
+    <section>
+    <div class="consultation">
+
+        <div class="consol-box">
+
+            <div class="plus-issue">
+                <h1>
+                    <spain class="one"> 01</spain> Consultation
+                </h1>
+                <img src="./hack/Plus icon.png" width="70px" height="70px">
+            </div>
+
+            <hr style="margin-top: 2rem; color: black;">
+
+            <p>During the initial consultation, we will discuss your business goals and objectives, target audience, and
+                current marketing efforts. This will allow us to understand your needs and tailor our services to best
+                fit your requirements.</p>
+
+        </div>
+
+
+        <div class="consol-box others">
+            <div class="plus-issue">
+                <h1>
+                    <spain class="one"> 02</spain> Research and Strategy Development
+                </h1>
+                <img src="./hack/Plus icon (1).png" width="60px" height="60px">
+            </div>
+        </div>
+
+
+        <div class="consol-box others">
+            <div class="plus-issue">
+                <h1>
+                    <spain class="one"> 03</spain> Implementation
+                </h1>
+                <img src="./hack/Plus icon (1).png" width="60px" height="60px">
+            </div>
+        </div>
+
+
+        <div class="consol-box others">
+            <div class="plus-issue">
+                <h1>
+                    <spain class="one"> 04</spain> Monitoring and Optimization
+                </h1>
+                <img src="./hack/Plus icon (1).png" width="60px" height="60px">
+            </div>
+        </div>
+
+        <div class="consol-box others">
+            <div class="plus-issue">
+                <h1>
+                    <spain class="one"> 05</spain> Reporting and Communication
+                </h1>
+                <img src="./hack/Plus icon (1).png" width="60px" height="60px">
+            </div>
+        </div>
+
+        <div class="consol-box others">
+            <div class="plus-issue">
+                <h1>
+                    <spain class="one"> 06</spain> Continual Improvement
+                </h1>
+                <img src="./hack/Plus icon (1).png" width="60px" height="60px">
+            </div>
+        </div>
+    </div>
+
+<div class="contact">
+<div class="contact-h1">
+<h1>Contact Us</h1>
+</div>
+<div class="contact-p">
+<p>Connect with Us: Let's Discuss Your ,<br> Digital Marketing Needs</p>
+</div>
+</div>
+
+
+<div class="email-section">
+
+<div class="email-left">
+<form action="">
+    <div class="check">
+<input type="checkbox">
+<label>Say hi</label>
+<input type="checkbox" style="margin-left: 3rem;">
+<label>Get a quote</label>
+</div>
+<div class="name">
+<label>Name</label><br>
+<input type="Name" class="full" placeholder="Name">
+</div>
+<div class="email">
+<label>Email*</label><br>
+<input type="email" class="full" placeholder="Email">
+</div>
+<div class="message">
+<label>Meessage*</label><br>
+<textarea name="" id="" class="full" placeholder="Messsage" ></textarea>
+</div>
+
+<button>Send Message </button>
+
+</form>
+</div>
+<div class="email-right">
+<img src="./hack/Illustration (3).png" width="550px" alt="">
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+
+<div class="ftr-main">
+
+<div class="ftr-nav">
+
+<img src="./hack/Logo.png" width="200px" height="40px" alt="">
+
+<div class="ftr-nav-menu">
+
+<ul>
+    <li>About us</li>
+    <li>Services</li>
+    <li>Usecases</li>
+    <li>Pricing</li>
+    <li>Blog</li>
+</ul>
+</div>
+
+<div class="nav-icons">
+    <img src="./hack/Social icon-1.png" width="40px">
+    <img src="./hack/Social icon-2.png" width="40px">
+    <img src="./hack/Social icon.png" width="40px">
+    </div>
+</div>
+
+
+
+<div class="ftr-hero-section">
+
+<div class="ftr-hero-left">
+<h2>Contact us</h2>
+<p>Email: info@positivus.com</p>
+<p class="center-p">Phone: 555-567-8901</p>
+<p>Address: 1234 Main St
+    Moonstone City, Stardust State 12345</p>
+</div>
+
+<div class="ftr-hero-right">
+<input type="email" placeholder="Email">
+<button>Subscribe to news</button>
+</div>
+
+</div>
+<hr style="margin-top: 4rem;">
+<p class="center-p">© 2023 Positivus. All Rights Reserved.<a href="#">Privacy Policy</a></p>
+
+</div>
+
+</footer>
+
+
+
+
+</body>
+
+</html>
